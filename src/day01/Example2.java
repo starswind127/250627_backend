@@ -41,7 +41,7 @@ public class Example2 { //class start : 모든 자바코드는 클래스안에 �
         System.out.println(str1);
 
             //4. byte = -128~ +127
-        // 5. short 타입 - 정수 +-3만정도
+        // 5. short 타입 - 정수 +-3만정도 ㅇㅁㄴㅇ
 
     }// main end
 
