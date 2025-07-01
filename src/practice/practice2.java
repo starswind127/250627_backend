@@ -2,9 +2,9 @@ package practice; // 현재 .java 파일의 패키지/폴더 명
 
 import java.util.Scanner;
 
-public class practice2 { // [컴파일/번역] 자바의 모든 코드는 클래스{} 안에서 작성해야한다. // class s
-    // [실행] 자바의 실행 코드는 모두 main 함수 안에서 작성해야한다. , main + 엔터
-    public static void main(String[] args) { // main s
+public class practice2 {
+
+    public static void main(String[] args) {
         //문제 1: a 와 b 두 변수의 합을 long 타입의 변수에 저장하여 그 결과를 출력하시오.
         //선언 코드 :
         //byte a = 10;
