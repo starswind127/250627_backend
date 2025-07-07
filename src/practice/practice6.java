@@ -173,6 +173,7 @@ public class practice6 {
                 price = 1000 + (usageMinutes[index] - 30) / 10 * 500;
             }
 
+
             if (price >= 20000) {
                 price = 20000;
             }
