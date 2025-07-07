@@ -104,10 +104,11 @@ public class practice6 {
             if (product.equals(name)) { // 만약 index 번째 제품명과 입력받은 값이 같으면
                 if (stock[index] <= count) { // 만약 index 번째 재고보다 입력받은 재고가 더 크면
                     stock[index] -= count; // 재고 차감
-                    System.out.println("구매 완료");
+                    check = 1;
                     break; // 상태변수 변경
                 } else {
-                    System.out.println(" 재고가 부족합니다");
+                    check = 2 ;
+                    break;
                 }
             }
         }
@@ -115,10 +116,10 @@ public class practice6 {
         if (check == 0) {
             System.out.println("없는 제품입니다");
         }
-        if (check == 1) {
+        else if (check == 1) {
             System.out.println("구매 완료");
         }
-        if (check == 2) {
+        else if (check == 2) {
             System.out.println("재고 부족");
         }
 
