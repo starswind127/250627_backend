@@ -1,8 +1,8 @@
-package practice; // .java 파일의 폴더/패키지 위치
+package day06; // .java 파일의 폴더/패키지 위치
 
 import java.util.Scanner;
 
-public class comppra2 { // class start
+public class Comp2 { // class start
     public static void main(String[] args) { // main start
         String[] contents = new String[100];    // 총 문자열(String) 100개를 저장할수 있는 배열 선언
         String[] writers = new String[100];     // 총 문자열(String) 100개를 저장할수 있는 배열 선언
