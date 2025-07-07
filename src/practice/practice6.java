@@ -174,7 +174,6 @@ public class practice6 {
             }
 
             if (price >= 20000) {
-
                 price = 20000;
             }
             System.out.printf("%s: %d분 주차, 최종 요금: %d원 ", carNumbers[index], usageMinutes[index], price);
