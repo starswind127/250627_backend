@@ -36,6 +36,7 @@ public class comppra2 { // class start
                     if( contents[index] != null ){
                         System.out.println( ( index + 1 ) +". 연락처 : " + contents[index] + " - 인원수 :" + writers[index] );
                         System.out.println("------------------------------------------");
+
                     } // if end
                 } // for end
             }
