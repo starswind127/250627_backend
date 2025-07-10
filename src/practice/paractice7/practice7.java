@@ -1,4 +1,4 @@
-package practice;
+package practice.paractice7;
 
 import java.util.Scanner;
 
