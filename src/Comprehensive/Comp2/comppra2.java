@@ -1,11 +1,11 @@
-package practice; // .java 파일의 폴더/패키지 위치
+package Comprehensive.Comp2; // .java 파일의 폴더/패키지 위치
 
 import java.util.Scanner;
 
 public class comppra2 { // class start
     public static void main(String[] args) { // main start
-        String[] contents = new String[100];    // 총 문자열(String) 100개를 저장할수 있는 배열 선언
-        String[] writers = new String[100];     // 총 문자열(String) 100개를 저장할수 있는 배열 선언
+        Waiting[] waitings = new Waiting[100];
+
 
         for( ; ; ) {
             System.out.println("============= 맛집 대기 시스템 =============");
@@ -19,9 +19,9 @@ public class comppra2 { // class start
                 System.out.print("인원 수 : ");         String writer = scan.next();
 
                 boolean check = false;
-                for( int index = 0 ; index <= contents.length -1 ; index++ ){
-                    if( contents[index] == null ){
-                        contents[index] = content;
+                for( int index = 0 ; index <= waitings.length -1 ; index++ ){
+                    if( waitings[index] == null ){
+                        waiting[index] = waitings;
                         writers[index] = writer;
                         check = true;   break;
                     }

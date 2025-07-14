@@ -1,4 +1,4 @@
-package practice;
+package Comprehensive;
 
 //[JAVA] 종합과제1 : 식당 대기번호 프로그램 (변수 활용)
 //[ 목표 ] Scanner, for(;;), if 문과 변수를 활용하여,
