@@ -1,4 +1,4 @@
-package day06; // .java 파일의 폴더/패키지 위치
+package Comprehensive.Comp2; // .java 파일의 폴더/패키지 위치
 
 import java.util.Scanner;
 

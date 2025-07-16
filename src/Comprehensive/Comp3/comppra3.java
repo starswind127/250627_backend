@@ -1,4 +1,4 @@
-package practice.comppra3;
+package Comprehensive.Comp3;
 
 public class comppra3 {
 }
