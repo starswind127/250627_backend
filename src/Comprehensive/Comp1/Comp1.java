@@ -4,7 +4,7 @@ package Comprehensive.Comp1;
 //[ 목표 ] Scanner, for(;;), if 문과 변수를 활용하여,
 //최대 3팀의 대기 명단을 관리할 수 있는 간단한 식당 대기번호 발행 프로그램을 구현합니다.
 import java.util.Scanner;
-public class comppra1 {
+public class Comp1{
     public static void main(String[] args) {
 //        1. 대기 명단 저장 공간 만들기
 //        · 최대 3팀의 대기 명단을 저장할 수 있어야 합니다.
@@ -33,19 +33,19 @@ public class comppra1 {
             Scanner scan = new Scanner(System.in);
             int choose = scan.nextInt();
             if( choose == 1 ) {
-                System.out.print("전화번호 : ");         String content = scan.next();
-                System.out.print("인원수 : ");       String writer = scan.next();
+                System.out.print("전화번호 : ");         String phone = scan.next();
+                System.out.print("인원수 : ");       String count = scan.next();
                 if( phone1 == null ){
-                    phone1 = content;
-                    count1 = writer;
+                    phone1 = phone;
+                    count1 = count;
                     System.out.println("[안내] 대기 등록이 완료되었습니다");
                 }else if( phone2 == null ){
-                    phone2 = content;
-                    count2 = writer;
+                    phone2 = phone;
+                    count2 = count;
                     System.out.println("[안내] 대기 등록이 완료되었습니다");
                 }else if( phone3 == null ){
-                    phone3 = content;
-                    count3 = writer;
+                    phone3 = phone;
+                    count3 = count;
                     System.out.println("[안내] 대기 등록이 완료되었습니다");
                 }else{
                     System.out.println("[경고] 더 이상 대기 등록을 할 수 없습니다.");

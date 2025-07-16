@@ -1,11 +1,9 @@
 package Comprehensive.Comp2;
-
+// 게시물 클래스
 public class Waiting {
-
     // 속성=멤버변수
-    // 전화번호
-    String phoneNumber;
-    // 인원 수
-    String People;
-
+    //전화번호
+    String phone;
+    // 인원수
+    String count;
 }

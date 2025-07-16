@@ -1,6 +1,4 @@
-package practice;
-
-import java.sql.SQLOutput;
+package practice.practice01;
 
 public class practice1 {
 

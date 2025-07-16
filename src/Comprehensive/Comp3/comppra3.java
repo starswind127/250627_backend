@@ -1,6 +1,8 @@
 package Comprehensive.Comp3;
 
 public class comppra3 {
+
+
 }
 //[JAVA] 종합과제3 : 식당 대기번호 프로그램 (메소드/역할 분리)
 //[ 목표 ]

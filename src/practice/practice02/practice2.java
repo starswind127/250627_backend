@@ -1,4 +1,4 @@
-package practice; // 현재 .java 파일의 패키지/폴더 명
+package practice.practice02; // 현재 .java 파일의 패키지/폴더 명
 
 import java.util.Scanner;
 
