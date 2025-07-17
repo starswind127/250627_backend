@@ -1,3 +1,7 @@
+drop database if exists SQL_practice02;
+create database SQL_practice02;
+use SQL_practice02;
+
 -- [SQL] 실습2 : SQL 테이블 조작어( DML )
 -- [ 문제 ] 아래 SQL 테이블 조작어( DML ) 관련 문제를 해결하시오.
 -- [ 제출방법 ] 각 문제의 요구사항에 맞는 SQL 코드를 작성하여 제출하시오.
@@ -19,6 +23,30 @@
 -- [문제 3]members 테이블에서 모든 회원의 member_id와 email을 조회하는 SQL을 작성하세요.
 -- [문제 4]members 테이블에서 member_id가 'user01'인 회원의 points를 1500으로 업데이트하는 SQL을 작성하세요.
 -- [문제 5]members 테이블에서 member_id가 'user01'인 회원을 삭제하는 SQL을 작성하세요.
+
+-- 1)
+create table members(
+member_id varchar(20) not null , 
+constraint primary key( member_id ),
+member_name varchar(50) not null ,
+email varchar(100) unique not null ,
+join_date datetime default now() ,
+points int default 0 
+);
+
+-- 2)
+insert into members( member_id , member_name , email, points )
+		values('user01','김철수', 'chulsoo@example.com', 1000 );
+
+-- 3)
+select member_id , email from members
+-- 4)
+update members set points = 1400 where member_id = 'user01';
+-- 5)
+delete from members where member_id = 'user01';
+
+        
+
 --
 -- [문제 6] 아래 조건에 맞는 products 테이블을 생성하는 SQL을 작성하세요.
 -- 테이블명: products
