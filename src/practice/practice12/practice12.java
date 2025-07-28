@@ -1,25 +1,48 @@
 package practice.practice12;
 
-public class practice12 {
+//      [문제 1]  1. name(문자열) 멤버 변수를 가진 Person 클래스를 만드세요.
+class Person{
+    // 1, 클래스의 멤버 : 멤버변수 = 특징/상태 , 생성자 = 초기화 , 메소드 = 행동/이벤트
+    String name;
+}
+class Student extends Person{ //2. Person 클래스를 상속받는 Student 클래스를 만드세요. Student 클래스에는 studentId(정수) 멤버 변수를 추가하세요.
+    // Person으로부터 상속받은 Student를 추가한다 .
+    String StudentId;
+}
+//      [문제 2] "동물이 소리를 냅니다."를 출력하는 makeSound() 메소드를 가진 Animal 클래스를 만드세요.
 
+class Animal{
+    void makeSound(){System.out.println("동물이 소리를 냅니다.");}
+}
+class Cat extends Animal {
+    void makeSound(){System.out.println("고양이가 야옹하고 웁니다");}//오버라이딩 조건 : 부모타입의 메소드명의 선언부를 통일함
+}
+
+
+public class practice12 {
     public static void main(String[] args) {
 
-    }
-}
-//[JAVA] 실습12 : 클래스의 상속
-//[ 문제 ] 아래 클래스 상속 관련 문제를 해결하시오.
-//        [ 제출방법 ] 코드가 작성된 파일이 위치한 깃허브 상세 주소를 제출하시오.
-//
+        //        [JAVA] 실습12 : 클래스의 상속
+
 //        [문제 1] 기본 상속
-//1. name(문자열) 멤버 변수를 가진 Person 클래스를 만드세요.
+//        1. name(문자열) 멤버 변수를 가진 Person 클래스를 만드세요.
 //        2. Person 클래스를 상속받는 Student 클래스를 만드세요. Student 클래스에는 studentId(정수) 멤버 변수를 추가하세요.
 //        3. main 함수에서 Student 객체를 생성하고, 상속받은 name과 자신의 studentId에 값을 저장한 뒤 모두 출력하세요.
-//
-//[문제 2] 메소드 오버라이딩 (Method Overriding)
-//1. "동물이 소리를 냅니다."를 출력하는 makeSound() 메소드를 가진 Animal 클래스를 만드세요.
+
+        Student s1 = new  Student(); // 인스턴스 객체 생성
+        //Student s1 : 변수 ,  new  Student(); : 인스턴스 객체 생성
+        s1.name = "유재석";
+        s1.StudentId = "20113";
+
+//        [문제 2] 메소드 오버라이딩 (Method Overriding)
+//        1. "동물이 소리를 냅니다."를 출력하는 makeSound() 메소드를 가진 Animal 클래스를 만드세요.
 //        2. Animal을 상속받고, makeSound() 메소드를 재정의하여 "고양이가 야옹하고 웁니다."를 출력하는 Cat 클래스를 만드세요.
-//3. main 함수에서 Cat 객체를 생성하고 makeSound() 메소드를 호출하여, 재정의된 내용이 출력되는지 확인하세요.
-//
+//        3. main 함수에서 Cat 객체를 생성하고 makeSound() 메소드를 호출하여, 재정의된 내용이 출력되는지 확인하세요.
+        Cat a1 = new Cat();         a1.makeSound();
+        Animal a2 = new Cat();      a2.makeSound();
+        Animal a3 = new Animal();      a3.makeSound();
+
+
 //        [문제 3] 생성자 호출 순서
 //1. 생성자에서 "부모 클래스 생성자 실행"을 출력하는 Machine 클래스를 만드세요.
 //2. Machine을 상속받고, 생성자에서 "자식 클래스 생성자 실행"을 출력하는 Computer 클래스를 만드세요.
@@ -62,3 +85,5 @@ public class practice12 {
 //2. Device를 상속받는 Electronic 클래스를 만드세요.
 //3. Electronic을 상속받는 Laptop 클래스를 만드세요.
 //4. main 함수에서 Laptop 객체를 생성한 뒤, 이 객체가 Electronic 타입과 Device 타입으로도 형 변환이 가능한지 instanceof 연산자로 확인하고 결과를 출력하세요.
+    }
+}

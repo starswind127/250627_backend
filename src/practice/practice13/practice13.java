@@ -1,25 +1,41 @@
 package practice.practice13;
+//        [문제 1] 기본 인터페이스와 구현
+interface Soundable{
 
-public class practice13 {
-    public static void main(String[] args) {
-
-    }
+    void makeSound();
 }
+class Cat implements Soundable{
+    @Override public void makeSound() { System.out.println("야옹"); }
+}
+class Dog implements Soundable{
+    public void makeSound() { System.out.println("멍멍"); } //@Override를 빼도 들어감
+}
+//        [문제 2] 인터페이스 상수
+interface RemoteControl{
+    public static final int MAX_VOLUME = 10;
+    int MIN_VOLUME = 0; // public static final 생략 가능
+}
+
+
 //[JAVA] 실습13 : 인터페이스
 //[ 문제 ] 아래 인터페이스 관련 문제를 해결하시오.
 //[ 제출방법 ] 코드가 작성된 파일이 위치한 깃허브 상세 주소를 제출하시오.
-//
-//        [문제 1] 기본 인터페이스와 구현
+public class practice13 {
+    public static void main(String[] args) {
+
 //1. "소리를 냅니다."라는 추상 메소드 makeSound()를 가진 Soundable 인터페이스를 정의하세요.
 //        2. Soundable 인터페이스를 구현(implements)하는 Cat 클래스와 Dog 클래스를 만드세요.
 //        3. 각 클래스에서 makeSound() 메소드를 오버라이딩하여, 각각 "야옹", "멍멍"을 출력하도록 구현하세요.
 //4. main 함수에서 Cat 객체와 Dog 객체를 생성하고, 각 객체의 makeSound() 메소드를 호출하여 결과를 확인하세요.
-//
-//        [문제 2] 인터페이스 상수
+        new Cat().makeSound(); //야옹
+        Soundable s1 = new Dog(); s1.makeSound(); //멍멍
+
 //1. RemoteControl 인터페이스를 만드세요.
 //2. 이 인터페이스 안에, public static final로 최대 볼륨 MAX_VOLUME = 10과 최소 볼륨 MIN_VOLUME = 0 상수를 정의하세요.
-//        3. main 함수에서 객체를 생성하지 않고, RemoteControl.MAX_VOLUME과 같이 인터페이스 이름으로 직접 접근하여 두 상수를 출력하세요.
-//
+//3. main 함수에서 객체를 생성하지 않고, RemoteControl.MAX_VOLUME과 같이 인터페이스 이름으로 직접 접근하여 두 상수를 출력하세요.
+        System.out.println( RemoteControl.MAX_VOLUME );
+        System.out.println( RemoteControl.MIN_VOLUME );
+
 //[문제 3] 다형성: 인터페이스 타입 변환
 //1. "달립니다."라는 추상 메소드 run()을 가진 Runnable 인터페이스를 정의하세요.
 //        2. Runnable을 구현하여 각각 "사람이 달립니다.", "자동차가 달립니다."를 출력하는 Person 클래스와 Car 클래스를 만드세요.
@@ -62,3 +78,6 @@ public class practice13 {
 //[문제 10] 정적 메소드 (Static Method)
 //1. Calculator 인터페이스를 만들고, 두 정수의 합을 반환하는 plus(int x, int y) 정적 메소드를 정의하세요.
 //        2. main 함수에서 Calculator 인터페이스를 구현하는 클래스나 객체를 만들지 않고, Calculator.plus(10, 20)과 같이 인터페이스 이름으로 직접 정적 메소드를 호출하여 결과를 출력하세요.
+
+    }
+}
